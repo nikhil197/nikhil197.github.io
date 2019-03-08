@@ -1,0 +1,784 @@
+/* Global */
+body{
+	background: #FFF;
+	color: #666666;
+	font-family: "Open Sans", sans-serif;
+}
+
+a {
+	color: #03C4EB;
+	transition: 0.5s;
+}
+
+a:hover, a:active, a:focus{
+	color: #03C5EC;
+	outline: none;
+	text-decoration: none;
+}
+
+p {
+	padding: 0px;
+	margin: 0px 0px 30px 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Raleway", sans-serif;
+	font-weight: bolder;
+	margin: 0px 0px 20px 0px;
+	padding: 0px;
+}
+
+/*Back to Top Button */
+.back-to-top{
+	position: fixed;
+	display: none;
+	background: rgba(0,0,0,0.2);
+	color: #FFF;
+	padding: 6px 12px 9px 12px;
+  	font-size: 16px;
+  	border-radius: 2px;
+  	right: 15px;
+  	bottom: 15px;
+  	transition: background 0.5s;
+}
+
+@media (max-width: 768px) {
+	.back-to-top {
+		bottom: 15px;
+	}
+}
+
+.back-to-top:focus{
+	background: rgba(0,0,0,0.2);
+	color: #FFF;
+	outline: none;
+}
+
+.back-to-top:hover{
+	background: #03C4EB;
+	color: #FFF;
+}
+
+/* Hero Section */
+#hero{
+	display: table;
+	width: 100%;
+	height: 100vh;
+	background: url(../img/Background.jpg) no-repeat top center fixed;
+	background-size: cover;
+}
+
+#hero .hero-container {
+	margin: 0;
+	padding: 0;
+	background: rgba(0, 0, 0, 0.6);
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#hero #logo h1 {
+	margin: 0;
+	font-family: "Raleway", sans-serif;
+	text-transform: uppercase;
+	color: #FFF;
+	font-weight: 700;
+	font-size: 90px;
+}
+
+#hero #logo h1 .logo-span{
+	text-transform: lowercase;
+}
+
+#hero h1 {
+	margin: 30px 0 10px 0;
+	text-transform: uppercase;
+	font-weight: 650;
+	line-height: 48px;
+	color: #FFF;
+}
+
+@media (max-width: 768px) {
+	#hero h1 {
+		font-size: 28px;
+		line-height: 36px;
+	}
+	
+	#hero #logo h1 {
+		font-weight: 500;
+		font-size: 60px;
+	}
+}
+
+#hero h2{
+	color: #999;
+	margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+	#hero h2 {
+		font-size: 24px;
+		line-height: 26px;
+		margin-bottom: 30px;
+	}
+	#hero h2 .rotating {
+		display: block;
+	}
+}
+
+#hero .rotating > .animated{
+	display: inline-block;
+}
+
+#hero .actions a {
+	font-family: "Raleway", sans-serif;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1px;
+	margin: 10px;
+	display: inline-block;
+	padding: 8px 20px;
+	font-size: 16px;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+#hero .btn-projects {
+	background: #03C4EB;
+	border: 2px solid #03C4EB;
+	color: #FFF;
+}
+
+#hero .btn-projects:hover {
+	background: none;
+	border: 2px solid #FFF;
+	color: #FFF;
+}
+
+#hero .btn-projects {
+	background: none;
+	border: 2px solid #FFF;
+	color: #FFF;
+}
+
+#hero .btn-projects:hover {
+	background: #03C4EB;
+	border: 2px solid #03C4EB;
+	color: #FFF;
+}
+
+/* Header */
+#header{
+	background: #111;
+	padding: 20px 0;
+	height: 80px;
+}
+
+#header #logo {
+	float: left;
+}
+
+#header #header-div {
+	position: relative;
+	top: -5px;
+}
+
+#header #logo-head h1 {
+	position: relative;
+	left: -40px;
+	margin: 0;
+	font-family: "Raleway", sans-serif;
+	text-transform: uppercase;
+	color: #FFF;
+	font-weight: 700;
+	font-size: 40px;
+}
+
+#header #logo-head h1 .logo-span {
+	
+	text-transform: lowercase;
+}
+
+@media (max-width: 768px) {
+	#header {
+		height: 80px;
+	}
+	
+	#header #logo-head {
+		text-align: center;
+		position: relative;
+		left: 35%;
+	}
+	
+	#header #logo-head h1 {
+		font-weight: 500;
+		font-size: 36px;
+	}
+}
+
+.is-sticky #header {
+	background: rgba(0, 0, 0, 0.85);
+}
+
+/* Navigation Menu */
+.nav-menu, .nav-menu * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nav-menu ul{
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: 0;
+	z-index: 99;
+}
+
+.nav-menu li{
+	position: relative;
+	white-space: nowrap;
+}
+
+.nav-menu > li {
+	float: left;
+}
+
+.nav-menu li:hover > ul, .nav-menu li.sfHover > ul {
+	display: block;
+}
+
+.nav-menu ul ul {
+	top: 0;
+	left: 100%;
+}
+
+.nav-menu ul li {
+	min-width: 180px;
+}
+
+/* Arrows */
+.sf-arrows .sf-with-ul {
+	padding-right: 30px;
+}
+
+.sf-arrows .sf-with-ul:after{
+	content: "\f107";
+	position: absolute;
+	right: 15px;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.sf-arrows ul .sf-with-ul:after {
+	content: "\f105";
+}
+
+/* Nav Menu Container */
+#nav-menu-container{
+	float: right;
+	margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+	#nav-menu-container{
+		display: none;
+	}
+}
+
+/* Nav Menu */
+.nav-menu a {
+	padding: 10px 15px;;
+	text-decoration: none;
+	display: inline-block;
+	color: #FFF;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	outline: none;
+}
+
+.nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a{
+	color: #03C4EB;
+}
+
+.nav-menu ul{
+	margin: 4px 0 0 15px;
+	box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.nav-menu ul li {
+	background: #FFF;
+	border-top: 1px solid #F4F4F4;
+}
+
+.nav-menu ul li:first-child{
+	border-top: 0;
+}
+
+.nav-menu ul li:hover{
+	background: #F6F6F6;
+}
+
+.nav-menu ul li a{
+	color: #333;
+}
+
+.nav-menu ul ul {
+	margin: 0;
+}
+
+/* Mobile Nav */
+#mobile-nav-toggle {
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 999;
+	margin: 20px 20px 0 0;
+	border: 0;
+	background: none;
+	font-size: 24px;
+	display: none;
+	transition: all 0.5s;
+	outline: none;
+}
+
+#mobile-nav-toggle i {
+	color: #FFF;
+}
+
+@media(max-width: 768px) {
+	#mobile-nav-toggle {
+		display: inline;
+	}
+}
+
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 998;
+  background: rgba(0, 0, 0, 0.9);
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+
+#mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#mobile-nav ul li {
+  position: relative;
+}
+
+#mobile-nav ul li a {
+  color: #fff;
+  font-size: 16px;
+  overflow: hidden;
+  padding: 10px 22px 10px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+}
+
+#mobile-nav ul li a:hover {
+  color: #fff;
+}
+
+#mobile-nav ul li li {
+  padding-left: 30px;
+}
+
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: #03C4EB;
+}
+
+#mobile-nav ul .menu-item-active {
+  color: #03C4EB;
+}
+
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+body.mobile-nav-active {
+  overflow: hidden;
+}
+
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+
+body.mobile-nav-active #mobile-nav-toggle {
+  color: #fff;
+}
+
+
+/* Sections */
+/* Common */
+
+.section-title {
+	font-size: 32px;
+	color: #111;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 700;
+}
+
+.section-description{
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.section-title-divider{
+	width: 60px;
+	height: 3px;
+	background: #03C4EB;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+/* About Section */
+#about {
+	background: #FFF;
+	padding: 80px 0;
+}
+
+#about .about-container{
+	background: url(../img/pexels-photo1.jpg) left fixed top no-repeat;
+}
+
+#about .about-content {
+	background: #FFF;
+}
+
+#about .about-title {
+	color: #333;
+	font-weight: 700;
+	font-size: 28px;
+	text-align: center;
+}
+
+#about .about-text {
+	line-height: 26px;
+}
+
+#about .about-text:last-child{
+	margin-bottom: 0;
+}
+
+
+/* Projects Section */
+#projects {
+	background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../img/Background.jpg) fixed center top;
+	background-size: cover;
+	padding: 80px 0 60px 0;
+}
+
+#projects .projects-item {
+	margin-bottom: 20px;
+}
+
+#projects .projects-icon {
+	float: left;
+	background: #03C4EB;
+	padding: 16px;
+	border-radius: 50%;
+	transition: 0.5s;
+	border: 1px solid #03C4EB;
+}
+
+#projects .projects-icon i {
+	color: #FFF;
+	font-size: 24px;
+}
+
+#projects .projects-icon#project-lone-survivor {
+	padding: 16px 18px;
+}
+
+#projects .projects-icon#project-graphx {
+	padding: 16px 19px;
+}
+
+#projects .projects-item:hover .projects-icon {
+	background: #FFF;
+}
+
+#projects .projects-item:hover .projects-icon i {
+	color: #03C4EB;
+}
+
+#projects .section-title {
+	color: #FFF;
+}
+
+#projects .projects-title {
+	margin-left: 80px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	color: #FFF;
+	text-transform: uppercase;
+}
+
+#projects .projects-title a {
+	color: #DDD;
+}
+
+#projects .projects-description {
+	color: #FFF;
+	margin-left: 80px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+/* Testimonials Section */
+#testimonials {
+	background: #FFF;
+	padding: 80px 0; 
+}
+
+/* Contact Section */
+#contact{
+	background: #F7F7F7;
+	padding: 80px 0;
+}
+
+#contact .info {
+	color: #333333;
+}
+
+#contact .info i {
+	font-size: 32px;
+	color: #03C4EB;
+	float: left;
+}
+
+#contact .info p {
+	padding: 0 0 10px 50px;
+	line-height: 24px;
+}
+
+/* Footer */
+#footer {
+	background: #111;
+	padding: 15px 0;
+	color: #FFF;
+	position: relative;
+	top: 10px;
+}
+
+#footer .copyright {
+	text-align: center;
+}
+
+/* Lone Survivor */
+#lone-survivor #logo {
+	padding-top: 300px;
+}
+
+#lone-survivor div.video-container{
+	margin: 0;
+	position: absolute;
+	text-align: left;
+	top: 0%;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+#lone-survivor img#hero-poster {
+	position: absolute;
+	z-index: -1;
+	opacity: 100%;
+	height: 110%;
+	width: 100%;
+}
+
+#lone-survivor .lone-survivor-container {
+	margin: 0;
+	padding: 0;
+	border: none;
+	width: 100%;
+	height: 97.5vh;
+	text-align: center;
+	vertical-align: text-top;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+#lone-survivor #logo h1 {
+	margin: 0;
+	font-family: "Raleway", sans-serif;
+	text-transform: uppercase;
+	color: #FFF;
+	font-weight: 500;
+	font-size: 85px;
+	z-index: 1;
+}
+
+#lone-survivor #logo h1 .logo-span{
+	text-transform: lowercase;
+}
+
+@media(max-width: 768px) {
+	#lone-survivor #logo h1 {
+		font-weight: 300;
+		font-size: 72px;
+	}
+}
+
+#lone-survivor #lone-survivor-title {
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	color: #C9C9C9;
+	font-size: 56px;
+	line-height: 100px;
+	font-weight: 400;
+	z-index: 1;
+	margin-bottom: 200px;
+}
+
+#lone-survivor #lone-survivor-title-container {
+	position: relative;
+	top: 20px;
+}
+
+@media(max-width: 768px) {
+	#lone-survivor #lone-survivor-title {
+		font-weight: 200;
+		font-size: 32px;
+	}
+}
+
+#demo {
+	background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../img/Lone-Survivor-Poster.PNG) fixed center top;
+	background-size: cover;
+	padding: 80px 0 60px 0;
+}
+
+#demo div.video-container {
+	margin: 0%;
+	position: relative;
+	text-align: left;
+	top: 10%;
+	left: -5%;
+	height: 100%;
+	width: 120%;
+	overflow: hidden;
+}
+
+li.list-item {
+	margin: 5px 0px;
+}
+
+#download-link {
+	padding-top: 0px;
+	font-size: 20px;
+}
+
+/* GraphX Rendering Engine */
+#graphx  #logo{
+	padding-top: 250px;
+}
+
+#graphx div.video-container{
+	margin: 0;
+	position: absolute;
+	text-align: left;
+	top: 0%;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+#graphx img#hero-poster {
+	position: absolute;
+	z-index: -1;
+	opacity: 100%;
+	height: 110%;
+	width: 100%;
+}
+
+#graphx .graphx-container {
+	margin: 0;
+	padding: 0;
+	border: none;
+	width: 100%;
+	height: 97.5vh;
+	text-align: center;
+	vertical-align: text-top;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+#graphx #logo h1 {
+	margin: 0;
+	font-family: "Raleway", sans-serif;
+	text-transform: uppercase;
+	color: #FFF;
+	font-weight: 500;
+	font-size: 85px;
+	z-index: 1;
+}
+
+#graphx #logo h1 .logo-span{
+	text-transform: lowercase;
+}
+
+@media(max-width: 768px) {
+	#graphx #logo h1 {
+		font-weight: 300;
+		font-size: 72px;
+	}
+}
+
+#graphx #graphx-title {
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	color: #C9C9C9;
+	font-size: 56px;
+	line-height: 100px;
+	font-weight: 400;
+	z-index: 1;
+	margin-bottom: 200px;
+}
+
+#graphx #graphx-title-container {
+	position: relative;
+	top: 20px;
+}
+
+@media(max-width: 768px) {
+	#graphx #graphx-title {
+		font-weight: 200;
+		font-size: 32px;
+	}
+}
