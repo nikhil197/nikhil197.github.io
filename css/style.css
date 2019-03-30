@@ -708,6 +708,24 @@ li.list-item {
 	padding-top: 250px;
 }
 
+#graphx-demo {
+	background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../img/Background.jpg) fixed center top;
+	background-size: cover;
+	opacity: 75%;
+	padding: 80px 0 60px 0;
+}
+
+#graphx-demo div.graphx-video-container {
+	margin: 0%;
+	position: relative;
+	text-align: center;
+	top: 10%;
+	left: -10%;
+	height: 150%;
+	width: 120%;
+	overflow: hidden;
+}
+
 #graphx div.video-container{
 	margin: 0;
 	position: absolute;
